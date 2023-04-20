@@ -1,0 +1,71 @@
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "name": "Dillion",
+  "lname": "Drizzzzzalllllly",
+  "age": 30
+}
+
+###
+
+GET http://localhost:3001/api/users
+
+
+
+### janny account create
+POST http://localhost:3001/api/janny_create_account
+Content-Type: application/json
+
+{
+  "name": "user1",
+  "password": "password",
+  "auth_pass": "password"
+}
+
+
+### janny account create
+POST http://localhost:3001/api/janny_create_account
+Content-Type: application/json
+
+{
+  "name": "user2",
+  "password": "password",
+  "auth_pass": "password"
+}
+
+
+
+
+### janny account login
+POST http://localhost:3001/api/janny_login
+Content-Type: application/json
+
+{
+  "name": "janny2",
+  "password": "password1"
+}
+
+
+###token test
+GET http://localhost:3001/api/get_test
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiamFubnkxIiwiaWF0IjoxNjgxNjgxMTUyLCJleHAiOjE2ODE2ODExODJ9.ha7pho_YfWe6fBL8SbMhDgExVS8QaX2u51kxGTBszrg
+
+Content-Type: application/json
+
+{
+  "value": 123123123,
+  "str": "hello"
+}
+
+
+
+
+
+###message get 
+POST http://localhost:3001/api/get_message
+Content-Type: application/json
+
+{
+  "messageID": "643b3a3fa2922b70bfa4d7de"
+}

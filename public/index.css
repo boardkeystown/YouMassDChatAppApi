@@ -1,0 +1,33 @@
+body {
+    /*https://10015.io/tools/css-background-pattern-generator*/
+    background:
+      radial-gradient(25% 25% at 25% 25%,#020202 99%,#0000 101%) 24px 24px/calc(2*24px) calc(2*24px),
+      radial-gradient(25% 25% at 25% 25%,#020202 99%,#0000 101%) 0 0/calc(2*24px) calc(2*24px),
+      radial-gradient(50% 50%,#0049ff 98%,#0000) 0 0/24px 24px,
+      repeating-conic-gradient(#0049ff 0 25%,#020202 0 50%) 
+        calc(.5*24px) 0/calc(2*24px) 24px;
+    color: #28df28;
+    text-shadow: 1px 0px #ffffff;
+}
+.content {
+    text-align: center;
+}
+
+.glowlink {
+    text-decoration: none;
+    animation: glowing 1s infinite;
+    background-color: aqua;
+}
+
+
+@keyframes glowing {
+    0% {
+      box-shadow: 0 0 5px #00ff00; /* Start with a small glow */
+    }
+    50% {
+      box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; /* Increase glow size */
+    }
+    100% {
+      box-shadow: 0 0 5px #00ff00; /* End with a small glow again */
+    }
+  }
